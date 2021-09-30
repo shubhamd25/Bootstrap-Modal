@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Modal</title>
+</head>
+
+<body style="text-align: center;">
+    <div>
+        <h1>First Modal</h1>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Model with input para
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Para Model</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="margin-left: 100px;">
+                        <textarea name="para" id="para" cols="30" rows="10"
+                            placeholder="Enter the paragraph and then submit" minlength="250"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second -->
+    <div>
+        <h1>Second Modal</h1>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+            Model with Form
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Form Model</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action=""
+                            style="background-color: greenyellow;border-radius: 15px;border: 4px solid magenta;max-width: 500px;text-align: center;">
+                            <h1 style="border-radius: 5px;border: 4px solid rgb(8, 8, 8);">Registration Form</h1>
+                            <h2>Contact Information</h2>
+                            <p>
+                                Name: <input type="text" name="name" id="" title="Name"><br>
+                                <br> Gender: <input type="radio" name="gender" id="male" title="Male">Male
+                                <input type="radio" name="gender" id="female" title="Female">Female <br><br>
+                                Address: <input style="padding-top: 20px;padding-bottom: 20px;" type="text"
+                                    name="address" id="address" title="address" class="adr"><br><br>
+                                Pincode: <input type="number" name="pin" id="" title="pin"><br><br>
+                                Email: <input type="email" name="email" id="email" title="email"><br><br>
+                                Mobile No. : <input type="number" name="mobile" id="" title="mobile no."><br>
+                            </p>
+                            <h2>Education Details</h2>
+                            <p>
+                                College Name: <input type="text" name="college" id="" title="college name"><br><br>
+                                10 <sup>th</sup> Percetage: <input type="text" name="college" id=""
+                                    placeholder="dont write % symbol" title="10 marks"><br><br>
+                                12 <sup>th</sup> Percetage: <input type="text" name="college" id=""
+                                    placeholder="dont write % symbol" title="12 marks"><br><br>
+                                Graduation <sup>th</sup> Percetage: <input type="text" name="college" id=""
+                                    placeholder="dont write % symbol" title="Graduation marks"><br><br>
+                                Specialisation: <br><input type="radio" name="specialisation" id="">B.E
+                                <br><input type="radio" name="specialisation" id="">B.C.A
+                                <br><input type="radio" name="specialisation" id="">B.B.A
+
+                            </p>
+                            <input type="submit">
+                            <input type="reset">
+
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Third Modal</h1>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        login with scrollable
+    </button>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Scrollable Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr>
+    <h1>Fourth Modal</h1>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+        cards
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cards</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.pixabay.com/photo/2021/08/08/09/52/man-6530416_960_720.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Man Reading</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="https://pixabay.com/photos/man-reading-education-portrait-6530416/" class="btn btn-primary" target="blank">Go Picsabay</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Fifth model</h1>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+    link modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Link</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <a href="https://www.google.com/" target="blank">Google</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+</html>
